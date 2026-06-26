@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+storybook-static
+*.local
+*.tsbuildinfo
+
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.vscode/*
+!.vscode/extensions.json
+.idea

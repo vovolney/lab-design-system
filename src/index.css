@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Portal palette: teal #007D94, vermelho #AB0000, navy #2B2D42 */
+    --background: 0 0% 100%;
+    --foreground: 235 21% 21%; /* navy */
+
+    --card: 0 0% 100%;
+    --card-foreground: 235 21% 21%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 235 21% 21%;
+
+    --primary: 189 100% 29%; /* teal #007D94 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 235 21% 21%; /* navy #2B2D42 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 235 10% 45%;
+
+    --accent: 189 100% 95%;
+    --accent-foreground: 189 100% 20%;
+
+    --destructive: 0 100% 33.5%; /* vermelho #AB0000 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 189 100% 29%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 235 21% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 235 21% 16%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 235 21% 16%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 189 100% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 235 15% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 235 15% 25%;
+    --muted-foreground: 235 10% 65%;
+
+    --accent: 189 60% 25%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 80% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 235 15% 28%;
+    --input: 235 15% 28%;
+    --ring: 189 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
